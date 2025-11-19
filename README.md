@@ -69,3 +69,9 @@ run -all
 Изменения в ветке main для демонстрации merge-конфликта again.
  
 
+## APB implementation
+
+Реализованы:
+- несинтезируемый APB master (apb_master.sv) с задачами apb_write и apb_read;
+- APB slave (apb_slave.sv) с регистрами по адресам 0x0, 0x4, 0x8, 0xC и $display;
+- верхний модуль / тестбенч (apb_top_tb.sv), соединяющий master и slave.
